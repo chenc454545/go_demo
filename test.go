@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
-func main(){
-	fmt.Println("Hello World!\n");
-	var s, sep string
-	for i := 1; i<len(os.Args); i++ {
-		s += sep + os.Args[i]
-		sep = " "
-	}
-	fmt.Println(s)
+func main() {
+	p := newInt()
+	fmt.Println(p)
+	*p = 100
+	fmt.Println(*p)
+}
+
+func newInt() *int {
+	return new(int)
 }
