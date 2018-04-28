@@ -6,9 +6,15 @@ import (
 
 func main() {
 	p := newInt()
-	fmt.Println(p)
+	q := newInt()
+	fmt.Println(*p,*q, p, q)
+	fmt.Println(p == q)
+	var pp *int
 	*p = 100
-	fmt.Println(*p)
+	*q = 100
+	fmt.Println(*p,*q, p, q)
+	fmt.Println(p == q)
+	fmt.Println(pp == p)
 }
 
 func newInt() *int {
