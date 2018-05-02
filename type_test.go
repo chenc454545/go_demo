@@ -7,8 +7,9 @@ import (
 type	Celsius		float64
 type	Fahrenheit	float64
 
+//const test var
 const (
-	AbsoluteZeroC	Celsius	=	-273.15
+	AbsoluteZeroC	Celsius	=	-273.15	
 	FreezingC	Celsius	=	0
 	BoilingC	Celsius	=	100
 )
